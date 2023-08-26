@@ -34,9 +34,9 @@ bannerRoutes.get("/all", async(req,res)=>{
             message:"All category fethed",
             data: allBanners
         })
-    }catch(e){
+    }catch(error){
         res.status(500).json({
-            error:e.message
+            error:error.message
         })
     }
 })
