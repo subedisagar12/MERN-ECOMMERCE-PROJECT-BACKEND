@@ -6,7 +6,7 @@ const {
   SingleOrder,
   UpdateOrder,
   DeleteOrder,
-} = require("../controllers/OrderController");
+} = require("../controllers/orderController");
 
 orderRoutes.post("/create", CreateOrder);
 

@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const orderedProductSchema = new mongoose.Schema({
   product_id: {
-    type: String,
+    type: mongoose.Schema.Types.ObjectId,
     required: true,
   },
   quantity: {
@@ -13,7 +13,6 @@ const orderedProductSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
-  // Other fields related to the ordered product...
 });
 
 const orderSchema = new mongoose.Schema(
