@@ -14,8 +14,8 @@ orderRoutes.get("/all", AllOrder);
 
 orderRoutes.get("/:orderId", SingleOrder);
 
-orderRoutes.put("/:orderId/update", UpdateOrder);
+orderRoutes.put("/:orderId", UpdateOrder);
 
-orderRoutes.delete("/:orderId/delete", DeleteOrder);
+orderRoutes.delete("/:orderId", DeleteOrder);
 
 module.exports = orderRoutes;
