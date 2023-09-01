@@ -32,11 +32,8 @@ app.use("/category", categoryRoutes);
 
 app.use("/user", userRoutes);
 
-<<<<<<< HEAD
 app.use("/product",productRoutes)
-=======
 app.use("/order", orderRoutes);
->>>>>>> 9486754b5e4dcf5992f07e754a20726e0d899dc8
 
 
 app.listen(PORT, () => {
