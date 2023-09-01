@@ -30,7 +30,11 @@ const productScheme = new mongoose.Schema(
             type:Number,
             default:true
         },
-        category_id:req.user.id
+        category_id:{
+            type: mongoose.Schema.Types.ObjectId,
+            ref:"User",
+            as:"User",
+        }
     },
     {timestamps:true}
 )
