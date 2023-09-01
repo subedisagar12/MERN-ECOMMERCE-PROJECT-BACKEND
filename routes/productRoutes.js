@@ -125,4 +125,4 @@ productRoutes.delete("/:id", async (req, res) => {
     }
 })
 
-module.exports = productRoutes()
+module.exports = productRoutes
